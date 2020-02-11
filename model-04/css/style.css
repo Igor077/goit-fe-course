@@ -1,0 +1,91 @@
+/* GLOBAL */
+* {
+  padding: 0;
+  margin: 0;
+  outline: 2px solid teal;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* HEADER */
+.header {
+  padding-top: 38px;
+}
+
+.logo {
+  float: left;
+}
+
+.logo {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: #0f0101;
+  text-transform: uppercase;
+  line-height: 1.067;
+}
+
+.nav__list {
+  float: right;
+}
+
+.nav__list__item {
+  float: left;
+}
+
+.nav__list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.nav__list__item a {
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "Open Sans";
+  color: #0f0101;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav__list__item a:hover {
+  color: #1abc9c;
+}
+
+/* FEATURED PRODUCTS */
+
+.featured-list-item {
+  float: left;
+}
+
+.featured-list-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.featured-list-item:nth-child(-n + 4) {
+  margin-bottom: 30px;
+}
+.section-title {
+  font-size: 48px;
+  font-family: "Roboto";
+  color: #515151;
+  text-transform: uppercase;
+  text-align: center;
+}
