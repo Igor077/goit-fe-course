@@ -1,16 +1,9 @@
-/* GLOBAL */
-* {
+*,
+*:before,
+*:after {
   padding: 0;
   margin: 0;
-  outline: 2px solid teal;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .clearfix::after {
@@ -18,74 +11,203 @@ a {
   clear: both;
   display: table;
 }
+
 .container {
   width: 1110px;
   margin: 0 auto;
 }
-
-ul,
-ol {
-  list-style: none;
+.row {
+  margin: 0 -15px;
 }
 
-/* HEADER */
-.header {
-  padding-top: 38px;
+.top-header {
+  padding-top: 40px;
+
+  padding-bottom: 50px;
 }
 
-.logo {
-  float: left;
-}
-
-.logo {
+.logo-link {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 30px;
-  font-family: "Roboto";
-  color: #0f0101;
+  color: #555252;
   text-transform: uppercase;
-  line-height: 1.067;
+  text-decoration: none;
 }
 
-.nav__list {
-  float: right;
+.logo-link::first-letter {
+  color: #1abc9c;
+  font-weight: 800;
 }
 
-.nav__list__item {
-  float: left;
-}
-
-.nav__list__item:not(:last-child) {
-  margin-right: 30px;
-}
-.nav__list__item a {
-  font-size: 14px;
-  line-height: 30px;
+.header-link {
+  color: #0f0101;
   font-family: "Open Sans";
-  color: #0f0101;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 11px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-.nav__list__item a:hover {
+.header-link:hover {
   color: #1abc9c;
 }
 
-/* FEATURED PRODUCTS */
+.nav-item {
+  list-style-type: none;
+  float: left;
+  margin-right: 35px;
+}
 
-.featured-list-item {
+.logo {
   float: left;
 }
 
-.featured-list-item:not(:nth-child(4n)) {
-  margin-right: 30px;
+.nav {
+  float: right;
 }
 
-.featured-list-item:nth-child(-n + 4) {
-  margin-bottom: 30px;
-}
+/* .products {
+
+} */
 .section-title {
-  font-size: 48px;
-  font-family: "Roboto";
-  color: #515151;
-  text-transform: uppercase;
   text-align: center;
+  color: #515151;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-weight: 900;
+  font-size: 48px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
+
+.section-title:after {
+  content: "";
+  display: block;
+  background-color: #1abc9c;
+  width: 160px;
+  height: 7px;
+  margin: 20px auto 0;
+  margin-top: 50px;
+}
+
+.product-name {
+  width: 245px;
+  height: 80px;
+  float: left;
+  
+}
+.list-item {
+  float: left;
+  color: #ffffff;
+  background-color: #323232;
+  margin: 15px;
+}
+
+.item-name {
+  float: left;
+  
+color: #ffffff;
+font-family: "Roboto - Black";
+font-size: 18px;
+line-height: 32px;
+
+}
+
+.product-price {
+  float: right;
+    padding: 4px;
+    height: 40px;
+    width: 40px;
+    background-color:#8c8c8c
+  
+  
+}
+
+.second-title-two {
+  text-align: center;
+  color: #515151;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  margin-bottom: 120px;
+  margin-top: 105px;
+}
+
+.new-list-item {
+  width: 301px;
+  height: 44px;
+  color: #555252;
+  font-family: "Open Sans - Semibold";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  float: left;
+}
+
+.new-img {
+  list-style: none;
+  float: left;
+  width: 350px;
+}
+
+.latest-news-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-list-item {
+  float: left;
+  width: 350px;
+}
+
+.news-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.news-list-item-title {
+  width: 301px;
+  height: 44px;
+  color: rgb(85, 82, 82);
+  font-family: "Open Sans - Semibold";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 50px;
+}
+.text {
+  width: 335px;
+  color: #555252;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.btn {
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: #fff;
+  width: 159px;
+  height: 51px;
+  font-weight: 400;
+  background-color: rgb(78, 198, 171);
+  text-decoration: none;
+  line-height: 51px;
+}
+
+.news-list-item-title::after{
+  content: "";
+  display: block;
+  margin: 0;
+  margin-top:30px;
+  background-color: rgb(78, 198, 171);
+  width: 136px;
+  height: 3px;
+}
+
+
