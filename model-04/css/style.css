@@ -97,7 +97,6 @@
   width: 245px;
   height: 80px;
   float: left;
-  
 }
 .list-item {
   float: left;
@@ -108,22 +107,19 @@
 
 .item-name {
   float: left;
-  
-color: #ffffff;
-font-family: "Roboto - Black";
-font-size: 18px;
-line-height: 32px;
 
+  color: #ffffff;
+  font-family: "Roboto - Black";
+  font-size: 18px;
+  line-height: 32px;
 }
 
 .product-price {
   float: right;
-    padding: 4px;
-    height: 40px;
-    width: 40px;
-    background-color:#8c8c8c
-  
-  
+  padding: 4px;
+  height: 40px;
+  width: 40px;
+  background-color: #8c8c8c;
 }
 
 .second-title-two {
@@ -200,14 +196,12 @@ line-height: 32px;
   line-height: 51px;
 }
 
-.news-list-item-title::after{
+.news-list-item-title::after {
   content: "";
   display: block;
   margin: 0;
-  margin-top:30px;
+  margin-top: 30px;
   background-color: rgb(78, 198, 171);
   width: 136px;
   height: 3px;
 }
-
-
